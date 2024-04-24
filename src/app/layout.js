@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <nav className=" py-4 h-10 absolute w-full">
+        <nav className=" py-4 h-10  fixed w-full">
           <ul className="flex cursor-pointer justify-center gap-10 py-2 mx-auto items-center ">
             <li >
               <Link href="/" className="text-white" >Home</Link>
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
               <Link  href="Login" className="text-white">Login</Link>
             </li>
           </ul>
-        </nav > */}
+        </nav >
         {children}
       </body>
     </html>

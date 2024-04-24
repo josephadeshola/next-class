@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Card from "./Card";
 
 export default function Home() {
   return (
+    <>
     <main className="bg-black h-screen">
       <div className=" md:flex grid grid-cols-1 px-8 md:px-14 justify-between h-full w-full md:py-20">
         <div className="md:w-1/3 mt-10 h-full">
@@ -15,10 +17,11 @@ export default function Home() {
             <Link href="Create"> 
             Create Account
             </Link>
-            </button>
+            </button> 
         </div>
       </div>
     </main>
-
+        <Card/>
+    </>
   );
 }
