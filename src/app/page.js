@@ -4,6 +4,19 @@ import Card from "./Card";
 export default function Home() {
   return (
     <>
+    <nav className=" bg-black py-4 h-18   fixed w-full">
+          <ul className="flex cursor-pointer justify-center gap-10 py-2 mx-auto items-center ">
+            <li >
+              <Link href="/" className="text-white" >Home</Link>
+            </li>
+            <li >
+              <Link href="Create" className="text-white">Signup</Link>
+            </li>
+            <li>
+              <Link  href="Login" className="text-white">Login</Link>
+            </li>
+          </ul>
+        </nav >
     <main className="bg-black h-screen">
       <div className=" md:flex grid grid-cols-1 px-8 md:px-14 justify-between h-full w-full md:py-20">
         <div className="md:w-1/3 mt-10 h-full">

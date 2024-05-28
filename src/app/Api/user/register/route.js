@@ -2,7 +2,7 @@ import dbConnection from "@/dbConfig/dbconnection";
 import User from '@/Model/userModel'
 import { NextRequest, NextResponse } from "next/server";
 
-dbConnection()
+dbConnection();
 
 export async function POST(NextRequest){
     try {
@@ -20,7 +20,7 @@ export async function POST(NextRequest){
             const  savedUser=  await newUser.save()
             if(savedUser){
                 console.log("save user");
-                return NextResponse.json({message:"user successfully signed up", success:true})
+                return NextResponse.json({message:"user successfully signed up", success:true , userInfo: reqBody})
             }
             else{
                 console.log("error saving ");
